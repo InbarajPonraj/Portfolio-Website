@@ -1,12 +1,14 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwallpapersden.com%2Fminimal-ship-artwork-purple-background-wallpaper%2F1920x1080%2F&psig=AOvVaw3Vkffut7j5EqTvVQ7Wr7Xv&ust=1721897082187000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCMD5zdOkv4cDFQAAAAAdAAAAABAE");
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #161515;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 .container {
@@ -16,7 +18,7 @@ body {
 }
 
 header {
-    background: #555;
+    background: #333;
     color: #fff;
     padding-top: 30px;
     min-height: 70px;
@@ -24,7 +26,7 @@ header {
 }
 
 header a {
-    color: #fff;
+    color: #e6e6e6;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 16px;
@@ -33,11 +35,12 @@ header a {
 header ul {
     padding: 0;
     list-style: none;
+    font-family: Bell MT;
 }
 
 header li {
     display: inline;
-    padding: 0 20px 0 20px;
+    padding: 0 20px;
 }
 
 header nav {
@@ -46,25 +49,53 @@ header nav {
 }
 
 header h1 {
+    font-family: Lucida Calligraphy;
     float: left;
 }
 
 section {
     padding: 20px 0;
+    background-color: #fff;
+    color: #333;
 }
 
 section h2 {
+    font-family: Copperplate Gothic Light;
     text-align: center;
     margin-bottom: 20px;
     color: #007bff;
 }
 
+section h3 {
+    color: #007bff;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile-photo {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.about-content {
+    flex: 1;
+    padding-left: 20px;
+}
+
 .portfolio-item {
     margin: 20px 0;
     padding: 20px;
-    border: 1px solid #ddd;
-    background: rgba(255, 255, 255, 0.9);
+    background-color: #fff;
     color: #333;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
 
 .portfolio-item img {
@@ -75,6 +106,10 @@ section h2 {
 form {
     display: flex;
     flex-direction: column;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
 }
 
 form label {
@@ -98,35 +133,26 @@ form button {
 }
 
 footer {
-    background: rgba(0, 0, 0, 0.7);
+    background: #333;
     color: #fff;
     text-align: center;
     padding: 20px;
     margin-top: 20px;
 }
 
-.linked img {
-    max-width: 100px;
-    height: auto;
+footer .social-links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
 }
 
-.profile-photo {
-    display: block;
-    margin: 0 auto 20px;
+footer .social-links a {
+    margin: 0 10px;
+}
+
+footer .social-links img {
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
     object-fit: cover;
-}
-
-.inba {
-    max-width: 100%;
-    height: 300px;
-    padding-left: 90px;
-    border-radius: 50%;
-}
-
-#portfolio {
-    background: #444;
-    color: #fff;
 }
