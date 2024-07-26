@@ -53,6 +53,11 @@ header h1 {
     float: left;
 }
 
+header a:hover {
+    color: #007bff;
+    transition: color 0.3s ease-in-out;
+}
+
 section {
     padding: 20px 0;
     background-color: #fff;
@@ -67,7 +72,7 @@ section h2 {
 }
 
 section h3 {
-    color: #007bff;
+    color: #010407;
 }
 
 .about-container {
@@ -105,7 +110,27 @@ section h3 {
 
 .skill-box:hover {
     transform: scale(1.05);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    background: rgb(114, 181, 222);
+    color: rgb(15, 14, 14);
+    box-shadow: 0 5px 15px rgba(26, 25, 25, 0.1);
+    transition: ease 2s;
+}
+
+.education-box {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+    margin-bottom: 20px;
+}
+
+.education-box:hover {
+    transform: scale(1.05);
+    background: rgb(18, 144, 207);
+    color: rgb(10, 10, 10);
+    box-shadow: 0 5px 15px rgba(26, 25, 25, 0.1);
+    transition: ease 3s;
 }
 
 .portfolio-item {
